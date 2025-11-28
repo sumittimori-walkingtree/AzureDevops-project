@@ -1,0 +1,19 @@
+version: "3.9"
+
+services:
+  backend:
+    build: ./backend
+    image: sumittim04/trendgenie-with-ai-backend:latest
+    ports:
+      - "5050:5050"
+    environment:
+      - GEMINI_API_KEY=${GEMINI_API_KEY}
+
+  frontend:
+    build: .
+    image: sumittim04/trendgenie-with-ai-frontend:latest
+    ports:
+      - "3000:3000"
+    environment:
+      - NEXT_PUBLIC_BACKEND_URL=http://localhost:5050
+      - NEXT_PUBLIC_FRONTEND=http://localhost:3000
