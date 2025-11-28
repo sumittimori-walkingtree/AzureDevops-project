@@ -24,7 +24,7 @@ export function Header() {
                   alt="TrendGenie AI Logo" 
                   width={250} 
                   height={100} 
-                  className="h-auto"
+                  className="h"
                 />
                 
               </Link>
