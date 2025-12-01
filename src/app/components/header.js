@@ -8,7 +8,7 @@ import Image from "next/image"
 export function Header() {
   return (
     <motion.header
-      initial={{ opacity: 0, y: -20 }}
+     S
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
       className="fixed top-4 left-4 right-4 z-50"
@@ -21,7 +21,7 @@ export function Header() {
               <Link href="/" className="flex items-center">
                 <Image 
                   src="/logo.png" 
-                  alt="TrendGenie AI Logo" 
+                  alt="TrendGenie AI" 
                   width={250} 
                   height={100} 
                   className="h-auto"
