@@ -16,7 +16,7 @@ export function Header() {
       <div className="mx-auto max-w-5xl">
         <div className="backdrop-blur-md bg-white/30 dark:bg-gray-900/30 rounded-2xl shadow-lg border border-white/20 dark:border-gray-800/20">
           <div className="flex items-center justify-between px-6 py-4">
-          {/* LOGO of the app *******/}
+            {/* Logo and Brand */}
             <div className="flex items-center">
               <Link href="/" className="flex items-center">
                 <Image 
@@ -24,7 +24,7 @@ export function Header() {
                   alt="TrendGenie AI Logo" 
                   width={250} 
                   height={100} 
-                  className="h"
+                  className="h-auto"
                 />
                 
               </Link>
